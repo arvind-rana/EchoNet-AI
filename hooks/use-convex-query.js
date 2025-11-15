@@ -1,4 +1,8 @@
 import { useQuery, useMutation } from "convex/react";
+//useConvexQuery – wraps useQuery from Convex to manage loading, error, and data states more explicitly.
+//useConvexMutation – wraps useMutation from Convex for mutations, handling loading, errors, and toast notifications.
+
+
 import { useState, useEffect } from "react";
 import { toast } from "sonner";
 
@@ -57,3 +61,32 @@ export const useConvexMutation = (mutation) => {
 
   return { mutate, data, isLoading, error };
 };
+// React Hooks / useEffect
+
+// Why do we need useEffect here?
+// Answer: To update local state (data, isLoading, error) whenever useQuery result changes.
+
+// Convex API
+
+// What are useQuery and useMutation?
+// Answer: useQuery fetches live data from Convex backend, useMutation performs server-side updates.
+
+// Error handling
+
+// How are errors handled in queries/mutations?
+// Answer: Caught in try/catch, stored in error state, and displayed using toast.error().
+
+// State Management
+
+// Why maintain local data, isLoading, error instead of using result directly?
+// Answer: Provides a unified API and allows more control over loading/error states, especially if you need side effects.
+
+// Async / await
+
+// How does mutate ensure isLoading and error are correctly updated during async operation?
+// Answer: We set isLoading = true at start, reset error, then finally set isLoading = false in finally.
+
+// Custom Hook Design
+
+// Why create a custom wrapper instead of using Convex hooks directly?
+// Answer: For consistency, error handling, toast notifications, and easier reusability across components.
