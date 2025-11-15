@@ -55,15 +55,11 @@ A modern social platform where users can **upload photos**, **share ideas**, and
 
 ---
 
-## 📸 Screenshots
 
-> *(Add your app screenshots here — upload them anytime and I will place them.)*
 
 ![Screenshot Placeholder](https://via.placeholder.com/800x400?text=Add+your+Screenshot+Here)
 
 ## 🔗 Live Demo
-
-> *(Add your deployed link here — for example Vercel URL)*
 
 **Live URL:** [https://echo-net-ai.vercel.app/](https://your-live-demo-link.com)
 
@@ -136,10 +132,10 @@ NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY=""
 IMAGEKIT_PRIVATE_KEY=""
 ```
 
-4. **Run Prisma migrations**
+4. **Run Convex migrations**
 
 ```
-npx prisma migrate dev
+npx Convex migrate dev
 ```
 
 5. **Start the development server**
@@ -163,11 +159,7 @@ npm run dev
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
 
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
+--
 
 ---
 
