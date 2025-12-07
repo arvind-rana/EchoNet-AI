@@ -57,12 +57,43 @@ A modern social platform where users can **upload photos**, **share ideas**, and
 
 
 
-![Homepage](./public/dashboard.png)
-![Feature](./public/feature.png)
-![Work](./public/work.png)
-![Dashboard](./public/post.png)
-![analytics](./public/analaytics.png)
-![Work](./public/imageKit.png)
+<h2 align="center">📸 Project Screenshots</h2>
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="./public/dashboard.png" width="95%" alt="Dashboard" />
+      <br /><b>Dashboard</b>
+    </td>
+    <td align="center">
+      <img src="./public/feature.png" width="95%" alt="Features" />
+      <br /><b>Features</b>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="./public/work.png" width="95%" alt="Work Section" />
+      <br /><b>Work Section</b>
+    </td>
+    <td align="center">
+      <img src="./public/post.png" width="95%" alt="Posts" />
+      <br /><b>Posts</b>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="./public/analytics.png" width="95%" alt="Analytics" />
+      <br /><b>Analytics</b>
+    </td>
+    <td align="center">
+      <img src="./public/imageKit.png" width="95%" alt="ImageKit Tools" />
+      <br /><b>ImageKit Tools</b>
+    </td>
+  </tr>
+</table>
+
 
 
 
