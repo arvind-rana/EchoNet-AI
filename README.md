@@ -84,7 +84,7 @@ A modern social platform where users can **upload photos**, **share ideas**, and
 
   <tr>
     <td align="center">
-      <img src="./public/analytics.png" width="95%" alt="Analytics" />
+      <img src="./public/analaytics.png" width="95%" alt="Analytics" />
       <br /><b>Analytics</b>
     </td>
     <td align="center">
