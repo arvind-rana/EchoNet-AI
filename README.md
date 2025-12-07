@@ -55,9 +55,39 @@ A modern social platform where users can **upload photos**, **share ideas**, and
 
 ---
 
+⭐screenshot
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="./public/dashboard.png" width="95%" alt="Dashboard Page" />
+      <br /><b>Dashboard</b>
+    </td>
+    <td align="center">
+      <img src="./public/feature.png" width="95%" alt="Feature Page" />
+      <br /><b>Features</b>
+    </td>
+  </tr>
 
-![Screenshot Placeholder](https://via.placeholder.com/800x400?text=Add+your+Screenshot+Here)
+  <tr>
+    <td align="center">
+      <img src="./public/analytics.png" width="95%" alt="Analytics Page" />
+      <br /><b>Analytics</b>
+    </td>
+    <td align="center">
+      <img src="./public/post.png" width="95%" alt="Post Page" />
+      <br /><b>Posts</b>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="./public/work.png" width="95%" alt="Work Page" />
+      <br /><b>Work</b>
+    </td>
+    <td align="center">
+      <img src="./public/imageKit.png" width="95%" alt="ImageKit Page" />
+
 
 ## 🔗 Live Demo
 
