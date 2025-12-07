@@ -57,7 +57,16 @@ A modern social platform where users can **upload photos**, **share ideas**, and
 
 
 
-![Screenshot Placeholder](https://via.placeholder.com/800x400?text=Add+your+Screenshot+Here)
+![Homepage](./public/dashboard.png)
+![Feature](./public/feature.png)
+![Work](./public/work.png)
+![Dashboard](./public/post.png)
+![analytics](./public/analaytics.png)
+![Work](./public/imageKit.png)
+
+
+
+
 
 ## 🔗 Live Demo
 

@@ -124,4 +124,90 @@ export const deleteComment = mutation({
     await ctx.db.delete(args.commentId);
     return { success: true };
   },
-});
+ });
+
+// This feature uses Convex’s document database. Posts, users, and comments are stored as independent JSON documents connected by IDs. There are no SQL joins, so I manually fetch related data.
+
+// When adding a comment, the backend:
+
+// Authenticates the user via Clerk → Convex identity
+
+// Fetches the user document from users using tokenIdentifier
+
+// Fetches the post document using its ID, validates status
+
+// Validates comment text
+
+// Inserts a new document into comments containing:
+
+// postId
+
+// authorId
+
+// content
+
+// timestamps
+
+// status
+
+// Fetching comments:
+
+// queries comments table filtered by postId and approved status
+
+// for each comment, fetches the user with ctx.db.get() (manual join)
+
+// Deleting comments:
+
+// fetch user → fetch comment → fetch post → check permissions → delete.
+
+// This shows clear separation of concerns: authentication, authorization, validation, and database operations
+
+
+// ctx.db.get() for single document
+
+// ctx.db.query() for filtered lists
+
+// ctx.db.insert() to create
+
+// ctx.db.patch() to update
+
+// ctx.db.delete() to remove
+// 1️⃣ How does Convex store data?
+
+// Document store (NoSQL-like), JSON documents.
+
+// 2️⃣ How do you query in Convex?
+
+// Using:
+
+// ctx.db.get() → fetch by ID
+
+// ctx.db.query() → filter, order, collect
+
+// No joins
+
+// 3️⃣ Why do you fetch user using tokenIdentifier?
+
+// To map authentication identity to your internal user record.
+
+// 4️⃣ How does Convex ensure ACID properties?
+
+// Convex internally uses transactional operations for each mutation (atomic per mutation).
+
+// 5️⃣ How does Convex handle relations?
+
+// Manually via IDs (authorId, postId).
+
+// 6️⃣ What is the difference between mutation and query?
+
+// mutation → write (state-changing)
+
+// query → read-only
+
+// 7️⃣ Why use Promise.all() in getPostComments?
+
+// To parallelize multiple DB calls for authors.
+
+// 8️⃣ What happens if user or post doesn’t exist?
+
+// Error thrown → mutation stops → no DB write happens.

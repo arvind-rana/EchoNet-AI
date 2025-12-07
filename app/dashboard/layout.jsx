@@ -198,3 +198,6 @@ export default function DashboardLayout({ children }) {
     </div>
   );
 }
+// // This component provides the full dashboard layout for the authenticated user.
+// // It includes a responsive sidebar, top navigation bar, user menu, dynamic active states, and integration with Convex to fetch draft post status.
+// It is mobile-friendly, uses TailwindCSS for styling, and automatically adjusts layout depending on screen size.

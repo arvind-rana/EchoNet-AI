@@ -86,3 +86,50 @@ const DailyViewsChart = ({ data, isLoading }) => {
 };
 
 export default DailyViewsChart;
+
+
+
+// What is a Server Component? (default)
+
+// In Next.js 13+, every component is a server component by default.
+
+// Server components:
+
+// Run on Node.js, not browser
+
+// No access to window, document, or browser APIs
+
+// Can use async/await directly
+
+// Can fetch data securely
+
+// Do NOT increase bundle size, because they don’t ship to the browser
+
+// Server components are perfect for:
+
+// ✔ Fetching data
+// ✔ Rendering static UI
+// ✔ SEO pages
+// ✔ Expensive calculations
+// ✔ Interacting with database (Prisma, Convex, MongoDB)
+
+// ❌ Server components cannot:
+
+// Use useState, useEffect, useRef
+
+// Use event listeners like onClick
+
+// Use browser-only libraries like Chart.js, Mapbox, Stripe JS
+
+// 🔥 2. What is a Client Component?
+
+// Client components run in the browser, so they can use:
+
+// ✔ useState
+// ✔ useEffect
+// ✔ DOM APIs
+// ✔ window, document
+// ✔ animations
+// ✔ charts
+// ✔ maps
+// ✔ event listeners like onClick, onChange

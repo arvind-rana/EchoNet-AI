@@ -664,3 +664,25 @@ export default function ImageUploadModal({
     </Dialog>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+// Zod	A validation library (checks data structure + rules)
+// Zod schema	Rules you define for what data should look like
+// zodResolver	Connects Zod with React Hook Form so forms use Zod validation
+
+// I use React Hook Form with a Zod resolver to manage complex form logic in a clean and type-safe way.
+// The useForm call initializes the form with schema-based validation and default values.
+// I then extract watch, setValue, and reset, which allow me to dynamically monitor changes, programmatically update fields, and reset the form when needed.
+
+// watch keeps the UI reactive without extra state variables, setValue updates specific fields based on user interactions, and reset restores the form when the modal closes.
+
+// This structure keeps the component highly maintainable, avoids multiple state variables, and ensures consistent validation across all image-transformation operations.
