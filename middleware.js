@@ -23,3 +23,6 @@ export const config = {
     '/(api|trpc)(.*)',
   ],
 };
+
+
+//It run before our app run and help us to authanticate our app

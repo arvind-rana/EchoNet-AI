@@ -164,3 +164,12 @@ export default function PostEditorSettings({ isOpen, onClose, form, mode }) {
     </Dialog>
   );
 }
+
+
+
+// PostEditorSettings is a settings modal tied to the main post editor 
+// using React Hook Form. It allows users to choose a category, manage tags dynamically, 
+// and optionally schedule a publish date in create mode. Tags support keyboard shortcuts like Enter and comma,
+//  include validation to avoid duplicates or exceeding ten tags, and can be removed individually. 
+//  The modal uses Shadcn's UI components for a polished interface and updates form state using watch and setValue, 
+//ensuring full synchronization with the main editor.”

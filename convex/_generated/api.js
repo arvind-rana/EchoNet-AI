@@ -19,4 +19,9 @@ import { anyApi } from "convex/server";
  * ```
  */
 export const api = anyApi;
-export const internal = anyApi;
+export const internal = anyApi;//use only on serever site not on client site
+
+
+// Convex generates an API reference file that provides type-safe access to backend
+//  queries, mutations, and actions using a proxy object (anyApi). 
+// This allows frontend and server code to call backend functions with autocomplete and compile-time safety.

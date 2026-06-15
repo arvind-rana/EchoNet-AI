@@ -314,7 +314,7 @@ const Home = () => {
                   <div className="flex items-center gap-1 mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star
-                        key={i}
+                        key={i}    //It dynamically generates star icons based on the rating number.
                         className="w-4 h-4 fill-yellow-400 text-yellow-400"
                       />
                     ))}

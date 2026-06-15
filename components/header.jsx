@@ -115,4 +115,9 @@ export default function Header() {
       </div>
     </header>
   );
-}
+ }
+
+
+ 
+// href="/dashboard" → Navigate to another route/page
+// href="#features" → Scroll to a section on the same page

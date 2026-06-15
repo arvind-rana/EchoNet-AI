@@ -55,7 +55,7 @@ A modern social platform where users can **upload photos**, **share ideas**, and
 
 ---
 
-
+⭐screenshot
 
 ![Homepage](./public/dashboard.png)
 ![Feature](./public/feature.png)
@@ -63,10 +63,6 @@ A modern social platform where users can **upload photos**, **share ideas**, and
 ![Dashboard](./public/post.png)
 ![analytics](./public/analaytics.png)
 ![Work](./public/imageKit.png)
-
-
-
-
 
 ## 🔗 Live Demo
 
